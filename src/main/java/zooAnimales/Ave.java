@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class Ave extends Animal{
     private static ArrayList<Ave> listado = new ArrayList<Ave>();
-    static int halcones;
-    static int aguilas;
+    public static int halcones;
+    public static int aguilas;
     private String colorPlumas;
 
 
@@ -20,7 +20,8 @@ public class Ave extends Animal{
 
     public static int cantidadAves(){return listado.size();}
 
-    String movimiento(){return "volar";}
+    @Override
+    public String movimiento(){return "volar";}
 
     public static Ave crearHalcon(String nombre, int edad, String genero){
         halcones++;
@@ -30,4 +31,9 @@ public class Ave extends Animal{
         aguilas++;
         return new Ave(nombre,edad,"montanas",genero,"blanco y amarillo");
     }
+
+    //getters y setters
+
+    public String getColorPlumas() {return colorPlumas;}
+    public void setColorPlumas(String colorPlumas) {this.colorPlumas = colorPlumas;}
 }

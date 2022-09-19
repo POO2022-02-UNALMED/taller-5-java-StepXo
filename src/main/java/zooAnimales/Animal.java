@@ -22,7 +22,7 @@ public class Animal {
     }
 
 
-    String movimiento(){return "desplazarse";}
+    public String movimiento(){return "desplazarse";}
 
     public static String totalPorTipo() {
         return "Mamiferos: " + Mamifero.cantidadMamiferos() +
@@ -47,4 +47,19 @@ public class Animal {
                     " y mi genero es " + this.genero;
         }
     }
+
+    //getters y setters
+    
+    public String getNombre() {return nombre;}
+    public void setNombre(String nombre) {this.nombre = nombre;}
+
+    public int getEdad() {return edad;}
+    public void setEdad(int edad) {this.edad = edad;}
+
+    public String getGenero() {return genero;}
+    public void setGenero(String genero) {this.genero = genero;}
+
+    public String getHabitat() {return habitat;}
+    public void setHabitat(String habitat) {this.habitat = habitat;}
+
 }
