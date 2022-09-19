@@ -5,19 +5,19 @@ public class Reptil extends Animal{
     private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
     public static int iguanas;
     public static int serpientes;
-    private String colorEescamas;
+    private String colorEscamas;
     private int largoCola;
 
 
-    public Reptil(String nombre,int edad, String habitat, String genero,String colorEescamas,int largoCola) {
+    public Reptil(String nombre,int edad, String habitat, String genero,String colorEscamas,int largoCola) {
         super(nombre, edad, habitat, genero);
-        this.colorEescamas = colorEescamas;
+        this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
         listado.add(this);
     }
     public Reptil() {
         super(null, 0, null, null);
-        this.colorEescamas=null;
+        this.colorEscamas=null;
         this.largoCola=0;
     }
 
@@ -37,8 +37,8 @@ public class Reptil extends Animal{
     }
 
     //getters y setters
-    public String getColorEescamas() {return colorEescamas;}
-    public void setColorEescamas(String colorEescamas) {this.colorEescamas = colorEescamas;}
+    public String getColorEscamas() {return colorEscamas;}
+    public void setColorEscamas(String colorEscamas) {this.colorEscamas = colorEscamas;}
 
     public int getLargoCola() {return largoCola;}
     public void setLargoCola(int largoCola) {this.largoCola = largoCola;}
