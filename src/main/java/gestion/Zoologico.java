@@ -13,8 +13,8 @@ public class Zoologico {
         this.ubicacion=ubicacion;
     }
 
-    public ArrayList<Zona> getZonas() {return zonas;}
-    public void setZonas(ArrayList<Zona> zonas) {this.zonas = zonas;}
+    public ArrayList<Zona> getZona() {return zonas;}
+    public void setZona(ArrayList<Zona> zonas) {this.zonas = zonas;}
 
     public String getNombre() {return nombre;}
     public void setNombre(String nombre) {this.nombre = nombre;}
