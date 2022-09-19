@@ -9,28 +9,28 @@ public class Reptil extends Animal{
     private int largoCola;
 
 
-    Reptil(String nombre,int edad, String habitat, String genero,String escamas,int largoCola) {
+    public Reptil(String nombre,int edad, String habitat, String genero,String escamas,int largoCola) {
         super(nombre, edad, habitat, genero);
         this.escamas = escamas;
         this.largoCola = largoCola;
         listado.add(this);
     }
-    Reptil() {
+    public Reptil() {
         super(null, 0, null, null);
         this.escamas=null;
         this.largoCola=0;
     }
 
 
-    static int cantidadReptiles(){return listado.size();}
+    public static int cantidadReptiles(){return listado.size();}
 
-    String movimiento(){return "reptar";}
+    public String movimiento(){return "reptar";}
 
-    static Reptil crearIguana(String nombre, int edad, String genero){
+    public static Reptil crearIguana(String nombre, int edad, String genero){
         iguanas++;
         return new Reptil(nombre,edad,"humedal",genero,"verde",3);
     }
-    static Reptil crearSerpiente(String nombre, int edad, String genero){
+    public static Reptil crearSerpiente(String nombre, int edad, String genero){
         serpientes++;
         return new Reptil(nombre,edad,"jungla",genero,"blanco",1);
     }
