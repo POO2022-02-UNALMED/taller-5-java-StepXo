@@ -19,6 +19,7 @@ public class Reptil extends Animal{
         super(null, 0, null, null);
         this.colorEscamas=null;
         this.largoCola=0;
+        listado.add(this);
     }
 
 
