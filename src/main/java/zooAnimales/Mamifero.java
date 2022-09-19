@@ -9,19 +9,17 @@ public class Mamifero extends Animal{
     private int patas;
 
 
-    Mamifero() {
-        super(null, 0, null, null);
-        this.pelaje=false;
-        this.patas=0;
-    }
-
     Mamifero(String nombre,int edad, String habitat, String genero,boolean pelaje,int patas){
         super(nombre, edad, habitat, genero);
         this.pelaje=pelaje;
         this.patas=patas;
         listado.add(this);
     }
-
+    Mamifero() {
+        super(null, 0, null, null);
+        this.pelaje=false;
+        this.patas=0;
+    }
 
     static int cantidadMamiferos(){return listado.size();}
 

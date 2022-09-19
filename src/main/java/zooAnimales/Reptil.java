@@ -9,16 +9,16 @@ public class Reptil extends Animal{
     private int largoCola;
 
 
-    Reptil() {
-        super(null, 0, null, null);
-        this.escamas=null;
-        this.largoCola=0;
-    }
     Reptil(String nombre,int edad, String habitat, String genero,String escamas,int largoCola) {
         super(nombre, edad, habitat, genero);
         this.escamas = escamas;
         this.largoCola = largoCola;
         listado.add(this);
+    }
+    Reptil() {
+        super(null, 0, null, null);
+        this.escamas=null;
+        this.largoCola=0;
     }
 
 
